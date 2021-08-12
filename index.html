@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script type="module" src="src/js/controller.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Remote me!</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="filters-pop"></div>
+    <div class="searchS">
+      <div class="searchS-img">
+        <img
+          src="https://cdn.dribbble.com/users/746427/screenshots/5275089/oops-2.gif"
+          alt=""
+        />
+      </div>
+      <div class="searchS-message"></div>
+      <div class="searchS-suggestions">
+        <span class="suggestion-label">Here are a few suggestions.</span>
+        <ul class="suggestion-list">
+          <li class="suggestion-item">Marketing</li>
+          <li class="suggestion-item">Front End Developer</li>
+          <li class="suggestion-item">DevOps</li>
+          <li class="suggestion-item">Back End Developer</li>
+          <li class="suggestion-item">Data Engineer</li>
+          <li class="suggestion-item">Product Designer</li>
+          <li class="suggestion-item">Full Stack</li>
+          <li class="suggestion-item">iOS Developer</li>
+          <li class="suggestion-item">Python</li>
+          <li class="suggestion-item">UI Designer</li>
+        </ul>
+      </div>
+    </div>
+    <section class="top">
+      <div class="head">
+        <div class="head-logo">
+          <img
+            src="https://nomadparadise.com/wp-content/uploads/2019/08/07_rjobs_remoteok.png"
+            alt=""
+          />
+        </div>
+        <div class="head-links">
+          <ul class="links">
+            <li class="links-item links-active">Remote Jobs</li>
+            <li class="links-item">Salaries</li>
+            <li class="links-item">Resources</li>
+          </ul>
+        </div>
+        <div class="head-user">
+          <div class="settings">
+            <form class="profile-form">
+              <label for="firstName" class="profile-label">Name</label>
+              <input type="text" id="firstName" class="profile-name" />
+              <div class="favorites-info" id="favorites">
+                <ul class="favorites-info-list">
+                  <li class="favorites-info-list-item favorites-bookmark">
+                    <i class="far fa-bookmark favorites-icon"></i>
+                    <span class="favorites-text">My Bookmarks(0)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="profile-btns">
+                <button class="profile-cancel profile-btn hidden">
+                  Cancel
+                </button>
+                <button class="profile-submit profile-btn">Update</button>
+              </div>
+            </form>
+          </div>
+          <span class="head-user-name"></span>
+          <div class="head-user-avatar">
+            <div class="favorites">1</div>
+            <span class="head-user-avatar-span"
+              ><i class="far fa-user"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="remote-jobs">
+      <section class="header-img">
+        <div class="search-section">
+          <section class="search">
+            <form class="search-form">
+              <div class="search-icon"><i class="fas fa-search"></i></div>
+              <input
+                type="text"
+                class="search-query"
+                placeholder="Search Job, Title or Location"
+              />
+            </form>
+          </section>
+          <div class="search-tags">
+            <ul class="search-tags-list"></ul>
+          </div>
+        </div>
+      </section>
+      <div class="ji">
+        <div class="ji-list">
+          <div class="popup">
+            <div class="popup-inner">
+              <span class="popup-close"><i class="fas fa-times"></i></span>
+              <div class="popup-info">
+                <div class="popup-info-text">
+                  Personalize your <span>preferences</span>!
+                </div>
+                <button class="popup-info-btn">Open Preferences</button>
+              </div>
+            </div>
+          </div>
+          <div class="notiMark">
+            <div class="notiMark-label"><i class="fas fa-check"></i></div>
+            <div class="notiMark-text">Succesfully Bookmarked!</div>
+          </div>
+          <div class="list-query">
+            <span class="list-query-ep"></span
+            ><span class="filters">filters</span>
+          </div>
+          <div class="result"></div>
+        </div>
+        <div class="ji-info">
+          <div class="closeInfo">
+            <i class="fas fa-arrow-left"></i> Back to results
+          </div>
+          <div class="intro"></div>
+          <div class="info-desc"></div>
+          <a href="" target="_blank" class="info-apply">Apply</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

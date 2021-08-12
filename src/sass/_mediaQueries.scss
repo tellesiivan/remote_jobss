@@ -1,0 +1,81 @@
+// media query | 750px or less
+@media only screen and (max-width: 750px) {
+  body {
+    height: auto;
+  }
+  .head {
+    &-links {
+      display: none;
+    }
+    &-user {
+      position: unset;
+    }
+  }
+  .settings {
+    transform: translateX(0px);
+    right: 0;
+    height: 100vh;
+    top: 0;
+    transition: all 0.35s ease-in-out;
+    &-active {
+      width: calc(100vw - 20px);
+    }
+  }
+  .profile {
+    &-btns {
+    }
+    &-cancel {
+      display: unset;
+      margin-right: 0.25em;
+    }
+    &-submit {
+      margin-left: 0.25em;
+    }
+  }
+  .searchS {
+    width: calc(100vw - 20px);
+
+    &-img {
+      display: flex;
+      img {
+        width: 60%;
+      }
+    }
+  }
+  .ji {
+    border-top: none;
+
+    &-list {
+      padding: 20px 10px;
+      overflow-y: unset;
+      width: 100%;
+      border-right: none;
+    }
+    &-info {
+      position: fixed;
+      transform: translateY(100%);
+      transition: all 0.45s ease;
+
+      &-active {
+        transform: translateY(0%);
+        height: calc(100% - 100px);
+        background-color: #f7f7f7;
+        z-index: 13;
+        bottom: 0;
+        width: calc(100% - 20px);
+      }
+    }
+  }
+  .search-section {
+    width: 84%;
+  }
+  .search {
+    min-width: unset;
+  }
+  .popup {
+    width: calc(100% - 50px);
+  }
+  .closeInfo {
+    display: block;
+  }
+}
